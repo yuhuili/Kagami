@@ -69,7 +69,11 @@ $t_middle = imagecreatefrompng("./resources/middle.png");
 imagecopyresized($kagami, $t_middle, $t_left_width, 0, 0, 0, $img_width-$t_left_width-$t_right_width, $img_height, $t_middle_width, $img_height);
 $t_right = imagecreatefrompng("./resources/right.png");
 imagecopy($kagami, $t_right, $img_width-$t_right_width, 0, 0, 0, $t_right_width, $img_height);
-$icon = imagecreatefrompng("https://github.com/".$username.".png");
+$icon = @imagecreatefrompng("https://github.com/".$username.".png");
+
+if (!$icon) {
+  $icon=imagecreatefromjpeg("https://github.com/".$username.".png");
+}
 
 if ($recolor_white) $icon_white = imagefilter($icon, IMG_FILTER_COLORIZE, 255, 255, 255);
 imagecopyresized($kagami, $icon, $icon_left_margin, $icon_top_margin, 0, 0, $icon_size, $icon_size, imagesx($icon), imagesx($icon));
