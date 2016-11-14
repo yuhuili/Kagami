@@ -1,5 +1,6 @@
 <?php
 
+$restricted = true;
 $allowed_users = ["yuhuili"];
 
 $num_dir_from_root = 1;
@@ -18,7 +19,7 @@ if (count($url_parts)<$num_dir_from_root+3 || count($url_parts)>$num_dir_from_ro
 $recolor_white = count($url_parts)==5;
 $username = $url_parts[2];
 $name = rawurldecode($url_parts[3]);
-if (!in_array($username, $allowed_users)) {
+if ($restricted && !in_array($username, $allowed_users)) {
   die();
 }
 
