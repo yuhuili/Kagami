@@ -24,6 +24,7 @@ if ($restricted && !in_array($username, $allowed_users)) {
 }
 
 $cache_dir = "./cache/".$username;
+$use_cache = true;
 $t_left_width = 6;
 $t_middle_width = 1;
 $t_right_width = 6;
@@ -48,7 +49,7 @@ header("Status: 200 OK");
 
 
 // Check if cached
-if (file_exists($cache_dir)) {
+if ($use_cache && file_exists($cache_dir)) {
   header("Content-type: image/png");
   header("Kagami: Cache");
   readfile($cache_dir);
