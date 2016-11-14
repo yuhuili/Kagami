@@ -2,9 +2,11 @@
 
 $allowed_users = ["yuhuili"];
 
+$num_dir_from_root = 1;
+
 // Process URL
 $url_parts = explode("/",$_SERVER['REQUEST_URI']);
-if (count($url_parts)<4 || count($url_parts)>5) {
+if (count($url_parts)<$num_dir_from_root+3 || count($url_parts)>$num_dir_from_root+4) {
   // 0: empty
   // 1: kagami
   // 2: GitHub username
