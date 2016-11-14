@@ -23,6 +23,7 @@ Options -Indexes
   - `$num_dir_from_root` Number of nested directory counted from site root
   - `$cache_dir` Cached images directory
   - `$restricted` To filter allowed users
+  - `$use_cache` To control if a new image should be generated each time
 
 ## Usage
 ![Yuhui Li Lab](https://githubtools.yuhuili.com/kagami/yuhuili-lab/Yuhui%20Li%20Lab)
