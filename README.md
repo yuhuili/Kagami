@@ -1,6 +1,6 @@
 # Kagami
 
-![Yuhui Li](https://githubtools.yuhuili.com/kagami/yuhuili/Yuhui%20Li/)
+<a href="https://github.com/yuhuili">![Yuhui Li](https://githubtools.yuhuili.com/kagami/yuhuili/Yuhui%20Li/)</a>
 
 Kagami (鏡) is a GitHub nameplate generator built in PHP.
 
@@ -26,13 +26,13 @@ Options -Indexes
   - `$use_cache` To control if a new image should be generated each time
 
 ## Usage
-![Yuhui Li Lab](https://githubtools.yuhuili.com/kagami/yuhuili-lab/Yuhui%20Li%20Lab)
+<a href="https://github.com/yuhuili-lab">![Yuhui Li Lab](https://githubtools.yuhuili.com/kagami/yuhuili-lab/Yuhui%20Li%20Lab)</a>
 
 ```
 https://your-domain.com/kagami/GITHUB_USERNAME/NAME
 ```
 
-![Yuhui Li](https://githubtools.yuhuili.com/kagami/yuhuili/Yuhui%20Li/)
+<a href="https://github.com/yuhuili">![Yuhui Li](https://githubtools.yuhuili.com/kagami/yuhuili/Yuhui%20Li/)</a>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To recolor icon to white for better apperance on top of a black background, add an extra slach at the end, this will trigger the recoloring process.
 
