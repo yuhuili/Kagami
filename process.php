@@ -13,6 +13,7 @@ if (count($url_parts)<$num_dir_from_root+3 || count($url_parts)>$num_dir_from_ro
   // 2: GitHub username
   // 3: Name
   // 4: Any value for recolor white
+  echo "Incorrect parameter count."
   die();
 }
 
@@ -20,6 +21,7 @@ $recolor_white = count($url_parts)==5;
 $username = $url_parts[2];
 $name = rawurldecode($url_parts[3]);
 if ($restricted && !in_array($username, $allowed_users)) {
+  echo "User not allowed."
   die();
 }
 
